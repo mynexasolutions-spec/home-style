@@ -1,0 +1,396 @@
+/* =========================================================
+   BASE – design tokens, reset, buttons, forms, helpers
+   ========================================================= */
+:root {
+  --navy: #0c2340;
+  --navy-2: #12315a;
+  --navy-3: #081a31;
+  --gold: #b9770e;
+  --gold-2: #d9a13b;
+  --gold-soft: #fbf3e4;
+  --ink: #0d1218;
+  --muted: #11161d;
+  --line: #e6e9ef;
+  --bg: #ffffff;
+  --bg-soft: #f6f7fa;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(12, 35, 64, 0.1);
+  --shadow-lg: 0 22px 50px rgba(12, 35, 64, 0.18);
+  --container: 1240px;
+  --font: var(--font-open-sans), 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  display: block;
+  background: #e9edf3;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+:focus-visible {
+  outline: 3px solid var(--gold-2);
+  outline-offset: 2px;
+}
+svg {
+  flex: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+.section {
+  position: relative;
+  padding: 84px 0;
+}
+.section--soft {
+  background: var(--bg-soft);
+}
+.skip-link {
+  position: fixed;
+  left: 12px;
+  top: -60px;
+  z-index: 400;
+  background: var(--navy);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 12px;
+}
+
+/* images that fill a positioned parent (see components/Img.tsx) */
+.cover {
+  object-fit: cover;
+}
+.cover.contain {
+  object-fit: contain;
+  background: transparent;
+}
+/* Reveal wrappers inside grids: let the card stretch to full height */
+.fill {
+  display: flex;
+}
+.fill > * {
+  flex: 1;
+  min-width: 0;
+}
+.center-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* ---------- Typography helpers ---------- */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+.eyebrow::after {
+  content: '';
+  width: 46px;
+  height: 2px;
+  background: var(--gold);
+}
+.gold {
+  color: var(--gold);
+}
+.sec-head {
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto 46px;
+}
+.sec-head h2 {
+  font-size: clamp(1.75rem, 3.4vw, 2.6rem);
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.2;
+}
+.sec-head p {
+  margin: 12px auto 0;
+  max-width: 640px;
+  color: var(--muted);
+  font-size: 1.12rem;
+}
+.sec-head--light h2 {
+  color: #fff;
+}
+.sec-head--light p {
+  color: #cdd8e8;
+}
+.about-h {
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.2;
+  margin: 14px 0 16px;
+}
+.txt {
+  color: var(--muted);
+  margin-bottom: 22px;
+  font-size: 1.08rem;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 26px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+.btn svg {
+  font-size: 0.85rem;
+  transition: transform 0.2s;
+}
+.btn:hover svg {
+  transform: translateX(4px);
+}
+.btn:disabled {
+  opacity: 0.7;
+  cursor: progress;
+}
+.btn--gold {
+  background: linear-gradient(135deg, var(--gold), #9a6208);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(185, 119, 14, 0.35);
+}
+.btn--gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(185, 119, 14, 0.45);
+}
+.btn--ghost {
+  background: #fff;
+  border-color: var(--navy);
+  color: var(--navy);
+}
+.btn--ghost:hover {
+  background: var(--navy);
+  color: #fff;
+}
+.btn--light {
+  background: #fff;
+  color: var(--navy);
+}
+.btn--whatsapp {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(18, 140, 126, 0.35);
+}
+.btn--whatsapp svg {
+  font-size: 1.15rem;
+}
+.btn--whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(18, 140, 126, 0.45);
+}
+.btn--whatsapp:hover svg {
+  transform: none;
+}
+.btn--light:hover {
+  background: var(--gold-soft);
+}
+.btn--block {
+  width: 100%;
+}
+
+/* ---------- Quote form ---------- */
+.quote-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px 28px 30px;
+  box-shadow: var(--shadow-lg);
+  border-top: 4px solid var(--gold);
+}
+.quote-card--plain {
+  box-shadow: none;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--gold);
+}
+.quote-card h2 {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.2;
+}
+.qc-sub {
+  color: var(--muted);
+  font-size: 1rem;
+  margin: 6px 0 18px;
+}
+.field {
+  position: relative;
+  margin-bottom: 12px;
+}
+.field > svg {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--navy);
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+.field.ta > svg {
+  top: 19px;
+  transform: none;
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  padding: 13px 14px 13px 42px;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+}
+.field textarea {
+  resize: vertical;
+  min-height: 86px;
+}
+.field select {
+  background: #fff
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%230c2340' stroke-width='2'/%3E%3C/svg%3E")
+    no-repeat right 15px center;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: 0;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 4px rgba(185, 119, 14, 0.14);
+}
+.hp {
+  position: absolute !important;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.form-note {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.form-note.ok {
+  background: #e8f6ee;
+  color: #1b6b3b;
+}
+.form-note.err {
+  background: #fdecec;
+  color: #a12626;
+}
+.form-fine {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+.form-note a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.form-fine svg {
+  color: #128c7e;
+  margin-right: 5px;
+  vertical-align: -1px;
+}
+
+/* ---------- Shared small bits ---------- */
+.pillar-ic {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: none;
+  background: var(--gold-soft);
+  color: var(--gold);
+  font-size: 1.4rem;
+  transition: transform 0.3s, background 0.3s, color 0.3s;
+}
+.checks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 20px;
+  margin-bottom: 30px;
+}
+.checks li {
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: var(--navy);
+}
+.checks svg {
+  color: #fff;
+  background: var(--gold);
+  width: 22px;
+  height: 22px;
+  padding: 5px;
+  border-radius: 50%;
+  margin-top: 2px;
+}
