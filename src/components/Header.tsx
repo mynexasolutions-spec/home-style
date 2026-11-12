@@ -51,7 +51,13 @@ export default function Header() {
         <div className="container">
           <Logo />
 
-          <nav className={`nav${open ? ' open' : ''}`} id="main-nav" aria-label="Main navigation">
+          <nav
+            className={`nav${open ? ' open' : ''}`}
+            id="main-nav"
+            aria-label="Main navigation"
+            // Close the drawer on any link tap, even a link to the page you are already on
+            onClick={(e) => (e.target as HTMLElement).closest('a') && setOpen(false)}
+          >
             <button className="nav-close" onClick={() => setOpen(false)} aria-label="Close menu">
               <FaXmark aria-hidden="true" />
             </button>

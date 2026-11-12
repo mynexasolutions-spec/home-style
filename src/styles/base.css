@@ -29,6 +29,35 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
 }
+
+/* ---------- Themed scrollbar (navy track, gold thumb) ---------- */
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--navy-3);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--gold-2), var(--gold));
+  border-radius: 10px;
+  /* inset ring in the track colour makes the thumb look slimmer and rounded */
+  border: 3px solid var(--navy-3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #e8b24d, var(--gold-2));
+}
+::-webkit-scrollbar-corner {
+  background: var(--navy-3);
+}
+/* Firefox (and any browser without the ::-webkit-scrollbar pseudo) */
+@supports not selector(::-webkit-scrollbar) {
+  html {
+    scrollbar-color: var(--gold) var(--navy-3);
+    scrollbar-width: thin;
+  }
+}
 body {
   margin: 0;
   font-family: var(--font);
@@ -208,6 +237,9 @@ svg {
 }
 .btn--gold {
   background: linear-gradient(135deg, var(--gold), #9a6208);
+  /* the 2px transparent border would otherwise show the gradient tiled again
+     (a lighter strip on the right / bottom edge) */
+  background-origin: border-box;
   color: #fff;
   box-shadow: 0 8px 20px rgba(185, 119, 14, 0.35);
 }

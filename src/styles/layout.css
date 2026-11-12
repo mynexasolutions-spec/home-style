@@ -403,6 +403,13 @@
 }
 
 @media (max-width: 900px) {
+  /* backdrop-filter makes the header the containing block of the fixed drawer
+     (it would shrink to header height), so it is switched off here. */
+  .header {
+    background: #fff;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
   .burger {
     display: grid;
   }
@@ -482,7 +489,11 @@
   }
   .nav .m-cta {
     display: inline-flex !important;
-    margin-top: 20px;
+    margin: 24px 0 8px;
+    padding: 16px 22px;
+    font-size: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(185, 119, 14, 0.3);
   }
   .nav-close {
     display: grid;
@@ -492,7 +503,8 @@
     position: fixed;
     inset: 0;
     background: rgba(8, 26, 49, 0.55);
-    z-index: 140;
+    /* must sit below the header (z-index 100): the drawer lives inside it */
+    z-index: 99;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
