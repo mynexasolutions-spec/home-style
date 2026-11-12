@@ -33,7 +33,7 @@ export default function ProjectsPage() {
             accent="Work"
             sub="Filter by service to see what we can do for your space."
           />
-          <GalleryBrowser items={projects} variant="cards" />
+          <GalleryBrowser items={projects} variant="cards" mixAll />
         </div>
       </section>
 

@@ -19,7 +19,7 @@ export default function FaqSection({ items = defaultFaqs }: { items?: { q: strin
           <Faq items={items} />
         </Reveal>
         <Reveal className="faq-img" variant="right" delay={250}>
-          <Img id={IMG.chair} alt="Elegant cream armchair against a soft wall" sizes="260px" />
+          <Img id={IMG.blueprint} alt="Project plans and tools laid out on a work table" sizes="260px" />
         </Reveal>
       </div>
     </section>

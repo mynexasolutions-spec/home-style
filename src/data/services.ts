@@ -51,11 +51,11 @@ export const services: Service[] = [
       { title: 'Clean, tidy work', text: 'Dust-controlled cutting and a proper clean-up when the job is done.' },
     ],
     gallery: [
+      '1589939705384-5185137a7f0f',
+      'px-2708106',
+      'px-5805489',
       '1600489000022-c2086d79f9d4',
-      '1595526114035-0d45ed16cfbf',
       '1556909172-54557c7e4fb7',
-      '1556912172-45b7abe8b7e1',
-      '1540518614846-7eded433c457',
     ],
     faqs: [
       {
@@ -92,10 +92,10 @@ export const services: Service[] = [
     ],
     gallery: [
       '1621905251189-08b45d6a269e',
+      'px-8488029',
+      'px-28265032',
       '1615529182904-14819c35db37',
       '1600121848594-d8644e57abab',
-      '1600585152220-90363fe7e115',
-      '1581092160562-40aa08e78837',
     ],
     faqs: [
       {
@@ -132,9 +132,9 @@ export const services: Service[] = [
     gallery: [
       '1584622650111-993a426fbf0a',
       '1523413651479-597eb2da0ad6',
+      'px-18861859',
+      'px-18764900',
       '1507652313519-d4e9174996dd',
-      '1565538810643-b5bdb714032a',
-      '1600585152220-90363fe7e115',
     ],
     faqs: [
       {
@@ -170,10 +170,10 @@ export const services: Service[] = [
     ],
     gallery: [
       '1585704032915-c3400ca199e7',
+      'px-6419128',
+      'px-29226620',
       '1558618666-fcd25c85cd64',
       '1565538810643-b5bdb714032a',
-      '1584622650111-993a426fbf0a',
-      '1507652313519-d4e9174996dd',
     ],
     faqs: [
       {
@@ -191,7 +191,7 @@ export const services: Service[] = [
     icon: 'painting',
     title: 'Interior Painting',
     short: 'Smooth, long-lasting paint finishes for walls and ceilings, with proper surface preparation.',
-    image: '1595814433015-e6f5ce69614e',
+    image: 'px-5493653',
     intro:
       'A great paint job is 80% preparation. We repair, level, prime and then paint, so your walls and ceilings look flawless and the finish lasts.',
     offerings: [
@@ -209,11 +209,11 @@ export const services: Service[] = [
       { title: 'Clean finish', text: 'Sharp edges, even coats and a full clean-up when the job is done.' },
     ],
     gallery: [
-      '1595814433015-e6f5ce69614e',
+      'px-5493653',
+      'px-6474471',
+      'px-7218579',
+      'px-6474129',
       '1562259949-e8e7689d7828',
-      '1615971677499-5467cbab01c0',
-      '1615873968403-89e068629265',
-      '1616486338812-3dadae4b4ace',
     ],
     faqs: [
       {
@@ -231,7 +231,7 @@ export const services: Service[] = [
     icon: 'exterior',
     title: 'Exterior Painting',
     short: 'Weather-resistant coatings that protect and refresh the outside of your home.',
-    image: IMG.exterior,
+    image: 'px-1917849',
     intro:
       'Sun, rain and dust are hard on a building. Our exterior painting repairs the surface and applies weather-resistant coatings that keep your facade protected and looking fresh.',
     offerings: [
@@ -248,11 +248,11 @@ export const services: Service[] = [
       { title: 'Surface repair first', text: 'Cracks and damp patches treated so the new coat holds.' },
     ],
     gallery: [
+      'px-1917849',
+      'px-32009173',
+      'px-31544574',
+      'px-35570308',
       '1600585154340-be6161a56a0c',
-      '1572120360610-d971b9d7767c',
-      '1600607688969-a5bfcd646154',
-      '1600566753190-17f0baa2a6c3',
-      '1560185007-cde436f6a4d0',
     ],
     faqs: [
       {
@@ -270,7 +270,7 @@ export const services: Service[] = [
     icon: 'texture',
     title: 'Texture & Design',
     short: 'Designer wall textures and decorative finishes that turn plain walls into statement features.',
-    image: '1615971677499-5467cbab01c0',
+    image: 'px-1939485',
     intro:
       'From subtle metallic shimmer to rugged concrete and soft clay effects, our texture and design finishes give your walls depth, character and a luxury feel.',
     offerings: [
@@ -287,11 +287,11 @@ export const services: Service[] = [
       { title: 'Durable & washable', text: 'Sealed finishes that stay beautiful and are easy to maintain.' },
     ],
     gallery: [
+      'px-1939485',
+      'px-1774986',
+      'px-5987195',
+      'px-16773490',
       '1615971677499-5467cbab01c0',
-      '1631679706909-1844bbd07221',
-      '1615873968403-89e068629265',
-      '1600210492486-724fe5c67fb0',
-      '1616486338812-3dadae4b4ace',
     ],
     faqs: [
       {
@@ -309,7 +309,7 @@ export const services: Service[] = [
     icon: 'duco',
     title: 'Duco Painting',
     short: 'Smooth, high-gloss spray finishes for furniture, doors, wardrobes and cabinetry.',
-    image: '1600489000022-c2086d79f9d4',
+    image: 'px-7493873',
     intro:
       'Duco (PU / lacquer) painting gives wood and board surfaces a mirror-smooth, high-gloss or matt finish in almost any colour – perfect for kitchens, wardrobes and doors.',
     offerings: [
@@ -326,11 +326,11 @@ export const services: Service[] = [
       { title: 'Durable surface', text: 'A hard-wearing coat that resists everyday knocks and stains.' },
     ],
     gallery: [
+      'px-7493873',
       '1600489000022-c2086d79f9d4',
       '1556912172-45b7abe8b7e1',
-      '1595526114035-0d45ed16cfbf',
       '1556911220-bff31c812dba',
-      '1565538810643-b5bdb714032a',
+      '1600585152220-90363fe7e115',
     ],
     faqs: [
       {
@@ -348,7 +348,7 @@ export const services: Service[] = [
     icon: 'wood',
     title: 'Wood Polish & Finishes',
     short: 'Polish, stain and protective coatings that bring out the grain and protect your woodwork.',
-    image: '1556909172-54557c7e4fb7',
+    image: 'px-5974350',
     intro:
       'Real wood deserves a finish that shows off its grain and protects it for years. We polish, stain and seal doors, furniture, flooring and panelling.',
     offerings: [
@@ -365,11 +365,11 @@ export const services: Service[] = [
       { title: 'Restoration expertise', text: 'We bring tired, scratched or faded wood back to life.' },
     ],
     gallery: [
-      '1556909172-54557c7e4fb7',
+      'px-5974350',
+      'px-5974367',
+      'px-5710754',
+      'px-6004890',
       '1589939705384-5185137a7f0f',
-      '1600607687939-ce8a6c25118c',
-      '1540518614846-7eded433c457',
-      '1600489000022-c2086d79f9d4',
     ],
     faqs: [
       {
@@ -387,7 +387,7 @@ export const services: Service[] = [
     icon: 'wallpaper',
     title: 'Wallpaper & Panelling',
     short: 'Elegant wallpaper installation, wall panelling and modern interior wall finishes.',
-    image: IMG.panelling,
+    image: 'px-6284232',
     intro:
       'Add depth and personality to any room with beautifully installed wallpaper, textured panels and wooden wall panelling.',
     offerings: [
@@ -404,11 +404,11 @@ export const services: Service[] = [
       { title: 'Endless styles', text: 'Classic, floral, textured or modern – we help you choose.' },
     ],
     gallery: [
-      '1615873968403-89e068629265',
-      '1631679706909-1844bbd07221',
-      '1600210492486-724fe5c67fb0',
-      '1616486338812-3dadae4b4ace',
+      'px-6284232',
+      'px-33419833',
       '1600607687939-ce8a6c25118c',
+      'px-5493673',
+      '1631679706909-1844bbd07221',
     ],
     faqs: [
       {
@@ -426,7 +426,7 @@ export const services: Service[] = [
     icon: 'upvc',
     title: 'UPVC Panelling',
     short: 'Durable, waterproof and low-maintenance UPVC panelling for walls and ceilings.',
-    image: IMG.windows,
+    image: 'px-3612406',
     intro:
       'UPVC panels are waterproof, termite-proof and easy to maintain – a smart choice for ceilings, bathrooms, kitchens and utility areas.',
     offerings: [
@@ -443,11 +443,11 @@ export const services: Service[] = [
       { title: 'Fast installation', text: 'Clean, quick fitting with minimal disruption.' },
     ],
     gallery: [
+      'px-3612406',
+      'px-5841908',
+      'px-5691521',
       '1560448204-e02f11c3d0e2',
       '1560185007-cde436f6a4d0',
-      '1572120360610-d971b9d7767c',
-      '1618221195710-dd6b41faaea6',
-      '1600121848594-d8644e57abab',
     ],
     faqs: [
       {
@@ -465,7 +465,7 @@ export const services: Service[] = [
     icon: 'waterproofing',
     title: 'Waterproofing',
     short: 'Leak and dampness protection for terraces, roofs, walls, bathrooms and basements.',
-    image: '1632759145351-1d592919f522',
+    image: 'px-5777354',
     intro:
       'Water damage is easier and cheaper to prevent than to repair. We find the cause of leaks and dampness and seal your building against them.',
     offerings: [
@@ -482,11 +482,12 @@ export const services: Service[] = [
       { title: 'Tested on completion', text: 'Water-ponding tests on terraces and wet areas before handover.' },
     ],
     gallery: [
+      'px-5777354',
       '1632759145351-1d592919f522',
+      'px-35570308',
       '1584622650111-993a426fbf0a',
       '1600585154340-be6161a56a0c',
       '1507652313519-d4e9174996dd',
-      '1600566753190-17f0baa2a6c3',
     ],
     faqs: [
       {

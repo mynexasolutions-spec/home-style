@@ -2,32 +2,32 @@ export const testimonials = [
   {
     name: 'Rohit Sharma',
     place: 'Gurugram',
-    avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+    avatar: '/images/avatars/men-32.jpg',
     text: 'Excellent work by the Home Style team. The carpentry and panelling in our home were done with great finishing and on time.',
   },
   {
     name: 'Neha Verma',
     place: 'Delhi',
-    avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
+    avatar: '/images/avatars/women-44.jpg',
     text: 'Very professional and reliable. They managed our complete home interior – from tiles to electrical and plumbing – hassle-free.',
   },
   {
     name: 'Amit Khanna',
     place: 'Gurugram',
-    avatar: 'https://randomuser.me/api/portraits/men/75.jpg',
+    avatar: '/images/avatars/men-75.jpg',
     text: 'Quality work, transparent pricing and a very cooperative team. Highly recommended for home renovation and interiors.',
   },
   // Placeholder reviews – replace with real client feedback
   {
     name: 'Priya Malhotra',
     place: 'Faridabad',
-    avatar: 'https://randomuser.me/api/portraits/women/68.jpg',
+    avatar: '/images/avatars/women-68.jpg',
     text: 'Our UPVC ceiling and wall panelling look fantastic and have been completely maintenance-free. Neat site and polite staff.',
   },
   {
     name: 'Sandeep Yadav',
     place: 'Gurugram',
-    avatar: 'https://randomuser.me/api/portraits/men/46.jpg',
+    avatar: '/images/avatars/men-46.jpg',
     text: 'From the free site visit to the final handover, everything was clear and organised. Our new kitchen is exactly what we imagined.',
   },
 ];

@@ -112,7 +112,7 @@ export default function HomePage() {
             accent="Projects"
             sub="A glimpse of our completed works across home and commercial spaces."
           />
-          <GalleryBrowser items={galleryItems.slice(0, 12)} variant="grid" />
+          <GalleryBrowser items={galleryItems} variant="grid" allLimit={12} tabLimit={8} />
           <Reveal className="center-cta">
             <Link href="/projects" className="btn btn--ghost">
               View All Projects <FaArrowRight aria-hidden="true" />

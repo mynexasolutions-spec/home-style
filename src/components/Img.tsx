@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import { unsplash } from '@/data/images';
+import { photoUrl } from '@/data/images';
 
 type Props = {
-  /** Unsplash photo id (see data/images.ts) */
+  /** Photo id – file in /public/images (see data/images.ts) */
   id: string;
   alt: string;
   /** Responsive `sizes` hint – keeps downloads small */
@@ -19,7 +19,7 @@ type Props = {
 export default function Img({ id, alt, sizes = '100vw', priority = false, className = '' }: Props) {
   return (
     <Image
-      src={unsplash(id)}
+      src={photoUrl(id)}
       alt={alt}
       fill
       sizes={sizes}

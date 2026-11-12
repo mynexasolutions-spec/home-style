@@ -1,4 +1,4 @@
-/** Unsplash photo ids used across the site (all verified to resolve). */
+/** Photo ids used across the site (files live in /public/images). */
 export const IMG = {
   heroLiving: '1618221195710-dd6b41faaea6',
   carpenter: '1589939705384-5185137a7f0f',
@@ -26,4 +26,11 @@ export const IMG = {
   livingNeutral: '1631679706909-1844bbd07221',
 } as const;
 
-export const unsplash = (id: string) => `https://images.unsplash.com/photo-${id}`;
+/**
+ * Resolves a photo id to its self-hosted file in /public/images.
+ * - `px-<number>` → Pexels photo (free licence, no attribution required)
+ * - anything else → Unsplash photo id (Unsplash licence)
+ * Files are stored as `<id>.jpg` (1600px wide); next/image resizes them per screen.
+ * To add a photo: save it as public/images/<id>.jpg and use <id> here or in the data files.
+ */
+export const photoUrl = (id: string) => `/images/${id}.jpg`;

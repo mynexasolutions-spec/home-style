@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 import Header from '@/components/Header';
 import ScrollProgress from '@/components/ScrollProgress';
-import { IMG, unsplash } from '@/data/images';
+import { IMG, photoUrl } from '@/data/images';
 import { site } from '@/data/site';
 
 import '@/styles/base.css';
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     title: 'Home Style – Complete Home Improvement & Interior Solutions',
     description: site.description,
-    images: [{ url: `${unsplash(IMG.heroLiving)}?auto=format&fit=crop&w=1200&q=75`, width: 1200, height: 800 }],
+    images: [{ url: photoUrl(IMG.heroLiving), width: 1600, height: 844 }],
   },
   twitter: { card: 'summary_large_image' },
 };

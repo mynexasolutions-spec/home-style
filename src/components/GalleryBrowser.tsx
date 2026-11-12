@@ -13,18 +13,42 @@ type Props = {
    * cards   – image + text card (projects page)
    */
   variant?: 'grid' | 'masonry' | 'cards';
+  /**
+   * Show only this many photos under "All", picked evenly across every
+   * category so each service is represented (e.g. on the home page).
+   * Selecting a tab still shows that category's photos.
+   */
+  allLimit?: number;
+  /** Max photos shown once a category tab is selected (default: all). */
+  tabLimit?: number;
+  /** Under "All", interleave the categories instead of grouping them. */
+  mixAll?: boolean;
 };
+
+/** Round-robin across categories so a short list still covers every service. */
+function balanced(items: GalleryItem[]): GalleryItem[] {
+  const groups = categories.map((c) => items.filter((i) => i.category === c.key)).filter((g) => g.length);
+  const out: GalleryItem[] = [];
+  for (let n = 0; out.length < items.length; n++) {
+    for (const g of groups) if (g[n]) out.push(g[n]);
+  }
+  return out;
+}
 
 const masonryRatios = ['4 / 5', '1 / 1', '4 / 3', '3 / 4', '5 / 4', '4 / 5', '1 / 1', '3 / 4'];
 
-export default function GalleryBrowser({ items, variant = 'grid' }: Props) {
+export default function GalleryBrowser({ items, variant = 'grid', allLimit, tabLimit, mixAll }: Props) {
   const [filter, setFilter] = useState<'all' | CategoryKey>('all');
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const visible = useMemo(
-    () => (filter === 'all' ? items : items.filter((i) => i.category === filter)),
-    [items, filter],
-  );
+  const visible = useMemo(() => {
+    if (filter === 'all') {
+      if (allLimit) return balanced(items).slice(0, allLimit);
+      return mixAll ? balanced(items) : items;
+    }
+    const inTab = items.filter((i) => i.category === filter);
+    return tabLimit ? inTab.slice(0, tabLimit) : inTab;
+  }, [items, filter, allLimit, tabLimit, mixAll]);
   const available = useMemo(
     () => categories.filter((c) => items.some((i) => i.category === c.key)),
     [items],

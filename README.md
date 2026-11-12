@@ -43,8 +43,7 @@ src/
     services.ts        the twelve services + their detail-page content
     projects.ts        gallery photos and featured projects
     content.ts         testimonials, FAQs, process steps
-    images.ts          Unsplash photo ids
-  lib/imageLoader.ts   builds resized Unsplash URLs for next/image
+    images.ts          photo ids → /images/<id>.jpg
   styles/              base · layout · sections · pages · animations (plain CSS)
 ```
 
@@ -59,12 +58,14 @@ src/
 * **Logo** → replace `public/home-style-logo.png` (if the new file has a different shape, update `width`/`height` in `src/components/Logo.tsx`). It is used in the header and footer.
 * **Colours & fonts** → CSS variables at the top of `src/styles/base.css`
 
-### Using your own photos
+### Photos
 
-Photos currently come from Unsplash (placeholders). To use real photos:
+All photos are **self-hosted** in `public/images/<id>.jpg` (1600px wide). `next/image` resizes and compresses them per screen size, so nothing is loaded from third-party servers. Testimonial avatars are in `public/images/avatars/`.
 
-1. Put them in `public/images/` and set `images.loader` back to the default in `next.config.mjs` (remove the `loader` / `loaderFile` lines).
-2. Change `src/components/Img.tsx` to use local paths instead of `unsplash(id)`.
+The current photos are stock placeholders from Unsplash and Pexels (both free to use; no attribution required). To use real photos:
+
+1. Save the photo as `public/images/<name>.jpg` (about 1600px wide is plenty).
+2. Use `<name>` as the `id` in `src/data/projects.ts` (gallery / projects), `src/data/services.ts` (service images) or `src/data/team.ts` (people).
 
 ## Animations
 

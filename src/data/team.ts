@@ -1,7 +1,7 @@
 /**
  * DUMMY DATA – every name, title, quote, date and milestone below is a
  * placeholder. Replace with the real founders, team and company history.
- * Photos are Unsplash stock portraits.
+ * Photos are stock portraits (files in public/images).
  */
 
 export type Founder = {
@@ -43,7 +43,7 @@ export const founders: Founder[] = [
 export type TeamMember = { name: string; role: string; photo: string };
 
 export const team: TeamMember[] = [
-  { name: 'Rohan Singh', role: 'Head of Carpentry', photo: '1500648767791-00dcc994a43e' },
+  { name: 'Rohan Singh', role: 'Head of Carpentry', photo: 'px-5974350' },
   { name: 'Imran Khan', role: 'Lead Electrician', photo: '1621905252507-b35492cc74b4' },
   { name: 'Priya Nair', role: 'Interior Designer', photo: '1580489944761-15a19d654956' },
   { name: 'Vikram Chauhan', role: 'Project Manager', photo: '1531427186611-ecfd6d936c79' },
@@ -76,6 +76,6 @@ export const valueCards = [
     icon: 'time',
     title: 'On-Time Delivery',
     text: 'A realistic schedule up front – and a team that sticks to it.',
-    image: '1556912172-45b7abe8b7e1',
+    image: '1581092160562-40aa08e78837',
   },
 ] as const;
