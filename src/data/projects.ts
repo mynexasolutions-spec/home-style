@@ -86,7 +86,7 @@ export const galleryItems: GalleryItem[] = [
   { id: 'duco-painting', title: 'Spray Finish for Wood Panels', category: 'painting' },
   { id: 'px-1939485', title: 'Swirl Texture Wall Finish', category: 'painting' },
   { id: 'px-1774986', title: 'Trowel Texture Finish', category: 'painting' },
-  { id: 'wood-polish', title: 'Hand Varnishing Woodwork', category: 'carpentry' },
+  { id: 'wood-polish-finish', title: 'Hand Varnishing Woodwork', category: 'carpentry' },
   { id: 'px-5710754', title: 'Wood Sanding & Finishing', category: 'carpentry' },
   { id: 'wooden-work', title: 'Built-in Wardrobe', category: 'carpentry' },
   { id: 'px-5493673', title: 'Wall Surface Preparation', category: 'wallpaper' },
@@ -119,7 +119,7 @@ export const projects: GalleryItem[] = [
     scope: ['Wardrobes', 'TV unit', 'LED lighting'],
   },
   {
-    id: 'wood-polish',
+    id: 'wood-polish-finish',
     title: 'Hand-Polished Woodwork',
     category: 'carpentry',
     location: 'Faridabad',

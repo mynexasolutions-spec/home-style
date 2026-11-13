@@ -352,7 +352,7 @@ export const services: Service[] = [
     icon: 'wood',
     title: 'Wood Polish & Finishes',
     short: 'Polish, stain and protective coatings that bring out the grain and protect your woodwork.',
-    image: 'wood-polish',
+    image: 'wood-polish-finish',
     intro:
       'Real wood deserves a finish that shows off its grain and protects it for years. We polish, stain and seal doors, furniture, flooring and panelling.',
     offerings: [
@@ -369,11 +369,12 @@ export const services: Service[] = [
       { title: 'Restoration expertise', text: 'We bring tired, scratched or faded wood back to life.' },
     ],
     gallery: [
-      'wood-polish',
+      'wood-polish-finish',
       'px-5974367',
       'px-5710754',
       'px-6004890',
-      '1589939705384-5185137a7f0f',
+      'wood-pu-melamine',
+      'wood-restoration',
     ],
     faqs: [
       {
