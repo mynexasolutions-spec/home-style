@@ -47,7 +47,7 @@ export const faqs = [
   },
   {
     q: 'Can you handle complete home interior work?',
-    a: 'Absolutely. Carpentry, electrical, tiling, plumbing, painting, textures, wood polish, wallpaper, panelling, UPVC and waterproofing are all handled by our own coordinated teams, so you work with just one point of contact.',
+    a: 'Absolutely. Wooden work, electrical, tiling, plumbing, painting, textures, wood polish, wallpaper, panelling, UPVC, waterproofing and deep cleaning are all handled by our own coordinated teams, so you work with just one point of contact.',
   },
   {
     q: 'Do you offer warranty on your work?',
@@ -64,7 +64,7 @@ export const processSteps = [
 ] as const;
 
 export const marqueeItems = [
-  'Carpentry',
+  'Wooden Work',
   'Electrical',
   'Tiles & Marble',
   'Plumbing',
@@ -75,4 +75,5 @@ export const marqueeItems = [
   'Panelling',
   'UPVC',
   'Waterproofing',
+  'Deep Cleaning',
 ];

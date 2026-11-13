@@ -19,7 +19,7 @@ import { IMG } from '@/data/images';
 export const metadata: Metadata = {
   title: 'Services',
   description:
-    'Carpentry, electrical, tiles & marble, plumbing, interior & exterior painting, textures, Duco, wood polish, wallpaper & panelling, UPVC and waterproofing – complete home improvement services in Gurugram, all under one roof.',
+    'Wooden work, electrical, tiles & marble, plumbing, interior & exterior painting, textures, Duco, wood polish, wallpaper & panelling, UPVC, waterproofing and deep cleaning – complete home improvement services in Gurugram, all under one roof.',
 };
 
 const included = [

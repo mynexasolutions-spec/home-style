@@ -44,12 +44,12 @@ export default function HomePage() {
               stagger={90}
             />
             <Reveal as="p" className="lead" delay={500}>
-              Carpentry, Electrical, Tiles &amp; Marble, Plumbing, Painting, Wallpaper, Panelling, UPVC and
-              Waterproofing – all under one roof.
+              Wooden Work, Electrical, Tiles &amp; Marble, Plumbing, Painting, Wallpaper, Panelling, UPVC,
+              Waterproofing and Deep Cleaning – all under one roof.
             </Reveal>
             <Reveal as="p" className="hero-type" delay={650}>
               Experts in{' '}
-              <Typewriter words={['Carpentry', 'Electrical Work', 'Tiles & Marble', 'Plumbing', 'Interior Painting', 'Texture & Design', 'Waterproofing']} />
+              <Typewriter words={['Wooden Work', 'Electrical Work', 'Tiles & Marble', 'Plumbing', 'Interior Painting', 'Texture & Design', 'Waterproofing', 'Deep Cleaning']} />
             </Reveal>
             <Reveal className="hero-cta" delay={800}>
               <Link href="/services" className="btn btn--gold">

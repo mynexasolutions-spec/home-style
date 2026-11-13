@@ -12,7 +12,8 @@ export type ServiceIconKey =
   | 'duco'
   | 'texture'
   | 'wood'
-  | 'waterproofing';
+  | 'waterproofing'
+  | 'cleaning';
 
 export type Service = {
   slug: string;
@@ -29,9 +30,9 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: 'carpentry-work',
+    slug: 'wooden-work',
     icon: 'carpentry',
-    title: 'Carpentry Work',
+    title: 'Wooden Work',
     short: 'Modular furniture, wardrobes, kitchens, doors & custom woodwork.',
     image: IMG.carpenter,
     intro:
@@ -497,6 +498,46 @@ export const services: Service[] = [
       {
         q: 'Do you waterproof bathrooms before new tiling?',
         a: 'Yes. Waterproofing wet areas before tiles go down is the best time to do it, and we can combine it with our tiling and plumbing work.',
+      },
+    ],
+  },
+  {
+    slug: 'deep-cleaning',
+    icon: 'cleaning',
+    title: 'Deep Cleaning',
+    short: 'Thorough top-to-bottom cleaning for kitchens, bathrooms, floors and the whole home.',
+    image: '1581578731548-c64695cc6952',
+    intro:
+      'Whether it is a fresh start after renovation or a seasonal refresh, our deep cleaning crews scrub, degrease and sanitise every corner so your home feels truly new.',
+    offerings: [
+      'Full-home deep cleaning',
+      'Post-renovation & post-construction cleaning',
+      'Kitchen degreasing, cabinets & chimney',
+      'Bathroom descaling & sanitisation',
+      'Floor scrubbing, marble & tile polishing',
+      'Windows, glass & balcony cleaning',
+      'Sofa, mattress & carpet cleaning',
+    ],
+    highlights: [
+      { title: 'Every corner covered', text: 'A room-by-room checklist so nothing is missed, from ceiling fans to skirting.' },
+      { title: 'Safe, effective products', text: 'Professional-grade cleaners and equipment that are tough on grime but gentle on surfaces.' },
+      { title: 'Renovation-ready', text: 'Paint splashes, cement dust and adhesive residue removed so you can move in straight away.' },
+    ],
+    gallery: [
+      '1581578731548-c64695cc6952',
+      '1628177142898-93e36e4e3a50',
+      '1558317374-067fb5f30001',
+      '1527515637462-cff94eecc1ac',
+      '1563453392212-326f5e854473',
+    ],
+    faqs: [
+      {
+        q: 'How long does a deep clean take?',
+        a: 'A typical 2–3 BHK home takes one to two days depending on size and condition. We confirm the timeline after a quick inspection or photos.',
+      },
+      {
+        q: 'Do you clean after renovation work?',
+        a: 'Yes. Post-renovation cleaning is one of our most requested services – we remove dust, paint marks and leftover material from floors, glass and fittings.',
       },
     ],
   },

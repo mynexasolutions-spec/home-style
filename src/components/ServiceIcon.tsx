@@ -1,6 +1,7 @@
 import {
   FaBolt,
   FaBorderAll,
+  FaBroom,
   FaDroplet,
   FaFaucetDrip,
   FaHouseChimney,
@@ -27,6 +28,7 @@ const map = {
   texture: FaPalette,
   wood: FaTree,
   waterproofing: FaDroplet,
+  cleaning: FaBroom,
 } as const;
 
 export default function ServiceIcon({ name }: { name: ServiceIconKey }) {

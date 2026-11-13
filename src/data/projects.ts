@@ -6,10 +6,11 @@ export type CategoryKey =
   | 'wallpaper'
   | 'upvc'
   | 'painting'
-  | 'waterproofing';
+  | 'waterproofing'
+  | 'cleaning';
 
 export const categories: { key: CategoryKey; label: string }[] = [
-  { key: 'carpentry', label: 'Carpentry' },
+  { key: 'carpentry', label: 'Wooden Work' },
   { key: 'electrical', label: 'Electrical' },
   { key: 'tiles', label: 'Tiles & Marble' },
   { key: 'plumbing', label: 'Plumbing' },
@@ -17,6 +18,7 @@ export const categories: { key: CategoryKey; label: string }[] = [
   { key: 'wallpaper', label: 'Wallpaper' },
   { key: 'upvc', label: 'UPVC' },
   { key: 'waterproofing', label: 'Waterproofing' },
+  { key: 'cleaning', label: 'Deep Cleaning' },
 ];
 
 export const categoryLabel = (key: CategoryKey) =>
@@ -89,6 +91,10 @@ export const galleryItems: GalleryItem[] = [
   { id: 'px-2708106', title: 'Built-in Wardrobe', category: 'carpentry' },
   { id: 'px-5493673', title: 'Wall Surface Preparation', category: 'wallpaper' },
   { id: 'px-35570308', title: 'Wall Repair & Re-plastering', category: 'waterproofing' },
+  { id: '1581578731548-c64695cc6952', title: 'Window & Shutter Cleaning', category: 'cleaning' },
+  { id: '1628177142898-93e36e4e3a50', title: 'Surface Sanitising', category: 'cleaning' },
+  { id: '1558317374-067fb5f30001', title: 'Floor & Carpet Cleaning', category: 'cleaning' },
+  { id: '1527515637462-cff94eecc1ac', title: 'Deep Vacuuming', category: 'cleaning' },
 ];
 
 /** Featured projects shown on the Projects page (placeholder descriptions). */
@@ -496,5 +502,42 @@ export const projects: GalleryItem[] = [
     description:
       'Damp, damaged plaster stripped back and redone, then sealed and recoated to stop moisture returning.',
     scope: ['Plaster removal', 'Re-plastering', 'Sealing'],
+  },
+  // ── Deep Cleaning ──
+  {
+    id: '1581578731548-c64695cc6952',
+    title: 'Post-Renovation Window Cleaning',
+    category: 'cleaning',
+    location: 'Gurugram',
+    description:
+      'Windows, frames and shutters scrubbed clean of paint splashes and dust once the renovation was complete.',
+    scope: ['Window & frame cleaning', 'Paint-mark removal', 'Dust clearing'],
+  },
+  {
+    id: '1628177142898-93e36e4e3a50',
+    title: 'Surface Sanitising & Wipe-Down',
+    category: 'cleaning',
+    location: 'Gurugram',
+    description:
+      'Tables, counters and wooden surfaces treated with cleaner and wiped down for a fresh, hygienic finish.',
+    scope: ['Surface cleaning', 'Sanitising', 'Wipe-down'],
+  },
+  {
+    id: '1558317374-067fb5f30001',
+    title: 'Floor & Carpet Deep Clean',
+    category: 'cleaning',
+    location: 'Delhi',
+    description:
+      'Hard floors and carpets vacuumed and cleaned thoroughly, including the edges and under the furniture.',
+    scope: ['Floor scrubbing', 'Carpet vacuuming', 'Under-furniture cleaning'],
+  },
+  {
+    id: '1527515637462-cff94eecc1ac',
+    title: 'Deep Vacuuming Service',
+    category: 'cleaning',
+    location: 'Delhi',
+    description:
+      'Heavy-duty vacuuming to lift dust, debris and trapped dirt from rugs and soft flooring.',
+    scope: ['Deep vacuuming', 'Debris removal', 'Rug cleaning'],
   },
 ];

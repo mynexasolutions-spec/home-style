@@ -43,7 +43,7 @@ export const founders: Founder[] = [
 export type TeamMember = { name: string; role: string; photo: string };
 
 export const team: TeamMember[] = [
-  { name: 'Rohan Singh', role: 'Head of Carpentry', photo: 'px-5974350' },
+  { name: 'Rohan Singh', role: 'Head of Wooden Work', photo: 'px-5974350' },
   { name: 'Imran Khan', role: 'Lead Electrician', photo: '1621905252507-b35492cc74b4' },
   { name: 'Priya Nair', role: 'Interior Designer', photo: '1580489944761-15a19d654956' },
   { name: 'Vikram Chauhan', role: 'Project Manager', photo: '1531427186611-ecfd6d936c79' },

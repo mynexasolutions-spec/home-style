@@ -20,8 +20,8 @@ export default function Footer() {
           <div>
             <Logo onDark />
             <p>
-              Your one-stop solution for carpentry, electrical, tiles &amp; marble, plumbing, painting,
-              wallpaper, panelling, UPVC and waterproofing.
+              Your one-stop solution for wooden work, electrical, tiles &amp; marble, plumbing, painting,
+              wallpaper, panelling, UPVC, waterproofing and deep cleaning.
             </p>
           </div>
 
