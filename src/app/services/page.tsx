@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import {
   FaBroom,
   FaClipboardCheck,
@@ -16,11 +16,12 @@ import ProcessSection from '@/components/sections/ProcessSection';
 import ServicesGrid from '@/components/sections/ServicesGrid';
 import { IMG } from '@/data/images';
 
-export const metadata: Metadata = {
-  title: 'Services',
+export const metadata = pageMetadata({
+  title: 'Home Improvement Services in Gurugram & Delhi NCR',
   description:
-    'Wooden work, electrical, tiles & marble, plumbing, interior & exterior painting, textures, Duco, wood polish, wallpaper & panelling, UPVC, waterproofing and deep cleaning – complete home improvement services in Gurugram, all under one roof.',
-};
+    'Wooden work, electrical, plumbing, tiles & marble, painting, Duco, wood polish, wallpaper, UPVC, waterproofing and deep cleaning – all under one roof in Gurugram.',
+  path: '/services',
+});
 
 const included = [
   { icon: FaClipboardCheck, title: 'Free site visit', text: 'We measure, assess and advise at no cost.' },

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import Founders from '@/components/about/Founders';
 import StatementBand from '@/components/about/StatementBand';
 import StoryMosaic from '@/components/about/StoryMosaic';
@@ -7,11 +7,13 @@ import PageHero from '@/components/PageHero';
 import CtaSection from '@/components/sections/CtaSection';
 import { IMG } from '@/data/images';
 
-export const metadata: Metadata = {
-  title: 'About Us',
+export const metadata = pageMetadata({
+  title: 'About Us – Home Improvement Company in Gurugram',
   description:
-    'Meet the founder behind Home Style – a Gurugram home-improvement company with in-house carpenters, electricians, plumbers, painters and finishing specialists.',
-};
+    'Meet the founder behind Home Style – a Gurugram home-improvement company with in-house wood, electrical, plumbing, painting and finishing teams.',
+  path: '/about',
+  image: IMG.livingGreen,
+});
 
 export default function AboutPage() {
   return (

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { FaArrowRight, FaCircleCheck, FaRegCirclePlay } from 'react-icons/fa6';
+import { pageMetadata } from '@/lib/seo';
 import AnimatedHeading from '@/components/AnimatedHeading';
 import GalleryBrowser from '@/components/GalleryBrowser';
 import Img from '@/components/Img';
@@ -23,13 +24,21 @@ import WhySection from '@/components/sections/WhySection';
 import { IMG } from '@/data/images';
 import { galleryItems } from '@/data/projects';
 
+export const metadata = pageMetadata({
+  title: 'Home Interior & Renovation Services in Gurugram | Home Style',
+  absoluteTitle: true,
+  description:
+    'One-stop home improvement in Gurugram & Delhi NCR: wooden work, electrical, plumbing, painting, tiles, UPVC & deep cleaning. Free site visit and quote.',
+  path: '/',
+});
+
 export default function HomePage() {
   return (
     <>
       {/* ---------- Hero ---------- */}
       <section className="hero">
         <Parallax speed={0.2}>
-          <Img id={IMG.heroLiving} alt="" sizes="100vw" priority />
+          <Img id={IMG.heroLiving} alt="Stylish modern living room interior by Home Style, Gurugram" sizes="100vw" priority />
         </Parallax>
         <div className="container">
           <div className="hero-copy">

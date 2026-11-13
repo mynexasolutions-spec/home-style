@@ -1,11 +1,12 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import LegalPage from '@/components/LegalPage';
 import { site } from '@/data/site';
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: 'Terms & Conditions',
   description: 'The terms that apply to using the Home Style website and requesting our services.',
-};
+  path: '/terms',
+});
 
 // NOTE: starter text only – have it reviewed and adapted before launch.
 export default function TermsPage() {

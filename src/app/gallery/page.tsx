@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import GalleryBrowser from '@/components/GalleryBrowser';
 import PageHero from '@/components/PageHero';
 import SectionHead from '@/components/SectionHead';
@@ -7,11 +7,12 @@ import SpacesSection from '@/components/sections/SpacesSection';
 import { IMG } from '@/data/images';
 import { galleryItems } from '@/data/projects';
 
-export const metadata: Metadata = {
-  title: 'Gallery',
+export const metadata = pageMetadata({
+  title: 'Photo Gallery – Home Interiors & Finishes',
   description:
-    'Photo gallery of Home Style interiors – kitchens, bathrooms, bedrooms, living rooms, lighting, panelling and more.',
-};
+    'Photo gallery of Home Style work – kitchens, bathrooms, bedrooms, living rooms, lighting, painting, panelling and more across Gurugram.',
+  path: '/gallery',
+});
 
 export default function GalleryPage() {
   return (

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import { FaLocationDot, FaPhone, FaRegEnvelope, FaWhatsapp } from 'react-icons/fa6';
 import AnimatedHeading from '@/components/AnimatedHeading';
 import PageHero from '@/components/PageHero';
@@ -8,11 +8,11 @@ import FaqSection from '@/components/sections/FaqSection';
 import { IMG } from '@/data/images';
 import { site } from '@/data/site';
 
-export const metadata: Metadata = {
-  title: 'Contact Us',
-  description:
-    `Contact Home Style for a free site visit and no-obligation quote. Call ${site.phone}, message us on WhatsApp or send an enquiry online.`,
-};
+export const metadata = pageMetadata({
+  title: 'Contact Us – Free Site Visit & Quote in Gurugram',
+  description: `Book a free site visit and no-obligation quote from Home Style, Gurugram. Call ${site.phone}, WhatsApp us or send an enquiry online.`,
+  path: '/contact',
+});
 
 const cards = [
   { icon: FaPhone, title: 'Call Us', line: site.phone, href: site.phoneHref },

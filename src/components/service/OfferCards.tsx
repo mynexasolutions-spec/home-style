@@ -20,7 +20,7 @@ export default function OfferCards({ service }: { service: Service }) {
               <article className="offer">
                 <Img
                   id={service.gallery[i % service.gallery.length]}
-                  alt=""
+                  alt={`${o} – ${service.title} in Gurugram by Home Style`}
                   sizes="(max-width: 640px) 90vw, (max-width: 1100px) 50vw, 33vw"
                 />
                 <span className="offer-tick">

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import GalleryBrowser from '@/components/GalleryBrowser';
 import PageHero from '@/components/PageHero';
 import SectionHead from '@/components/SectionHead';
@@ -8,11 +8,12 @@ import StatsBar from '@/components/sections/StatsBar';
 import { IMG } from '@/data/images';
 import { projects } from '@/data/projects';
 
-export const metadata: Metadata = {
-  title: 'Projects',
+export const metadata = pageMetadata({
+  title: 'Our Projects – Interiors, Painting & Renovation in Gurugram',
   description:
-    'Browse recent Home Style projects – modular kitchens, bedrooms, bathrooms, lighting, painting, panelling, UPVC and waterproofing across Gurugram and Delhi NCR.',
-};
+    'Browse recent Home Style projects – modular kitchens, wardrobes, bathrooms, lighting, painting, UPVC and waterproofing across Gurugram and Delhi NCR.',
+  path: '/projects',
+});
 
 export default function ProjectsPage() {
   return (

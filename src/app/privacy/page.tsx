@@ -1,11 +1,12 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import LegalPage from '@/components/LegalPage';
 import { site } from '@/data/site';
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: 'Privacy Policy',
   description: 'How Home Style collects, uses and protects your personal information.',
-};
+  path: '/privacy',
+});
 
 // NOTE: starter text only – have it reviewed and adapted before launch.
 export default function PrivacyPage() {

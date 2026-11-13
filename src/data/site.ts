@@ -1,9 +1,11 @@
 export const site = {
   name: 'Home Style',
   tagline: 'Transforming Spaces, Enhancing Lives',
+  /** Kept under ~160 characters so search engines show it in full. */
   description:
-    'Home Style – one-stop home improvement and interior solutions in Gurugram. Wooden work, electrical, tiles & marble, plumbing, painting, textures, wood polish, wallpaper, panelling, UPVC, waterproofing and deep cleaning under one roof.',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000',
+    'One-stop home improvement in Gurugram & Delhi NCR: wooden work, electrical, plumbing, painting, tiles, UPVC & deep cleaning. Free site visit and quote.',
+  /** Live domain. Override with NEXT_PUBLIC_SITE_URL (e.g. for a preview deployment). */
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.homestylencr.com').replace(/\/+$/, ''),
   phone: '+91 88027 05070',
   phoneHref: 'tel:+918802705070',
   /** Digits only (country code + number) – the format wa.me expects */
