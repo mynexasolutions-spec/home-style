@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Founders from '@/components/about/Founders';
 import StatementBand from '@/components/about/StatementBand';
 import StoryMosaic from '@/components/about/StoryMosaic';
-import TeamGrid from '@/components/about/TeamGrid';
 import ValueCards from '@/components/about/ValueCards';
 import PageHero from '@/components/PageHero';
 import CtaSection from '@/components/sections/CtaSection';
@@ -11,7 +10,7 @@ import { IMG } from '@/data/images';
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'Meet the founders and team behind Home Style – a Gurugram home-improvement company with in-house carpenters, electricians, plumbers, painters and finishing specialists.',
+    'Meet the founder behind Home Style – a Gurugram home-improvement company with in-house carpenters, electricians, plumbers, painters and finishing specialists.',
 };
 
 export default function AboutPage() {
@@ -29,7 +28,6 @@ export default function AboutPage() {
       <Founders />
       <StatementBand />
       <ValueCards />
-      <TeamGrid />
       <CtaSection
         title="Ready to Work With"
         accent="Our Team?"

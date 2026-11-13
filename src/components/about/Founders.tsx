@@ -11,8 +11,8 @@ export default function Founders() {
       <div className="container">
         <SectionHead
           title="Meet the"
-          accent="Founders"
-          sub="The people who started Home Style and still stay involved in every project."
+          accent="Founder"
+          sub="The person who started Home Style and stays involved in every project."
         />
 
         <div className="founders">
@@ -38,21 +38,25 @@ export default function Founders() {
                   {f.role}
                 </Reveal>
                 <AnimatedHeading as="h3" className="f-name" text={f.name.split(' ')[0]} accent={f.name.split(' ').slice(1).join(' ')} />
-                <Reveal as="p" className="f-quote" delay={150}>
-                  <FaQuoteLeft aria-hidden="true" />
-                  {f.quote}
-                </Reveal>
+                {f.quote && (
+                  <Reveal as="p" className="f-quote" delay={150}>
+                    <FaQuoteLeft aria-hidden="true" />
+                    {f.quote}
+                  </Reveal>
+                )}
                 <Reveal as="p" className="txt" delay={250}>
                   {f.bio}
                 </Reveal>
-                <Reveal className="f-facts" delay={350}>
-                  {f.facts.map((fact) => (
-                    <div key={fact.label}>
-                      <b>{fact.value}</b>
-                      <span>{fact.label}</span>
-                    </div>
-                  ))}
-                </Reveal>
+                {f.facts && f.facts.length > 0 && (
+                  <Reveal className="f-facts" delay={350}>
+                    {f.facts.map((fact) => (
+                      <div key={fact.label}>
+                        <b>{fact.value}</b>
+                        <span>{fact.label}</span>
+                      </div>
+                    ))}
+                  </Reveal>
+                )}
               </div>
             </div>
           ))}

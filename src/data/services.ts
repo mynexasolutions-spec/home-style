@@ -33,8 +33,8 @@ export const services: Service[] = [
     slug: 'wooden-work',
     icon: 'carpentry',
     title: 'Wooden Work',
-    short: 'Modular furniture, wardrobes, kitchens, doors & custom woodwork.',
-    image: IMG.carpenter,
+    short: 'Custom home interior woodwork – modular kitchens, wardrobes, TV units, doors & furniture.',
+    image: 'wooden-work',
     intro:
       'Our carpenters design and build furniture and fittings that are made for your space – strong joinery, clean finishes and hardware that lasts for years.',
     offerings: [
@@ -52,10 +52,10 @@ export const services: Service[] = [
       { title: 'Clean, tidy work', text: 'Dust-controlled cutting and a proper clean-up when the job is done.' },
     ],
     gallery: [
-      '1589939705384-5185137a7f0f',
-      'px-2708106',
-      'px-5805489',
+      'wooden-work',
+      '1556912172-45b7abe8b7e1',
       '1600489000022-c2086d79f9d4',
+      'px-2708106',
       '1556909172-54557c7e4fb7',
     ],
     faqs: [
@@ -74,7 +74,7 @@ export const services: Service[] = [
     icon: 'electrical',
     title: 'Electrical Work',
     short: 'Complete electrical solutions including wiring, fittings, lighting and repairs.',
-    image: IMG.electrician,
+    image: 'electrical-work',
     intro:
       'From concealed wiring in a new home to fault-finding in an old one, our electricians deliver safe, tidy and code-compliant work.',
     offerings: [
@@ -92,7 +92,7 @@ export const services: Service[] = [
       { title: 'Fast repairs', text: 'Quick diagnosis and a clear explanation before we fix anything.' },
     ],
     gallery: [
-      '1621905251189-08b45d6a269e',
+      'electrical-work',
       'px-8488029',
       'px-28265032',
       '1615529182904-14819c35db37',
@@ -192,7 +192,7 @@ export const services: Service[] = [
     icon: 'painting',
     title: 'Interior Painting',
     short: 'Smooth, long-lasting paint finishes for walls and ceilings, with proper surface preparation.',
-    image: 'px-5493653',
+    image: 'interior-painting',
     intro:
       'A great paint job is 80% preparation. We repair, level, prime and then paint, so your walls and ceilings look flawless and the finish lasts.',
     offerings: [
@@ -210,6 +210,7 @@ export const services: Service[] = [
       { title: 'Clean finish', text: 'Sharp edges, even coats and a full clean-up when the job is done.' },
     ],
     gallery: [
+      'interior-painting',
       'px-5493653',
       'px-6474471',
       'px-7218579',
@@ -232,7 +233,7 @@ export const services: Service[] = [
     icon: 'exterior',
     title: 'Exterior Painting',
     short: 'Weather-resistant coatings that protect and refresh the outside of your home.',
-    image: 'px-1917849',
+    image: 'exterior-painting',
     intro:
       'Sun, rain and dust are hard on a building. Our exterior painting repairs the surface and applies weather-resistant coatings that keep your facade protected and looking fresh.',
     offerings: [
@@ -249,6 +250,7 @@ export const services: Service[] = [
       { title: 'Surface repair first', text: 'Cracks and damp patches treated so the new coat holds.' },
     ],
     gallery: [
+      'exterior-painting',
       'px-1917849',
       'px-32009173',
       'px-31544574',
@@ -310,7 +312,7 @@ export const services: Service[] = [
     icon: 'duco',
     title: 'Duco Painting',
     short: 'Smooth, high-gloss spray finishes for furniture, doors, wardrobes and cabinetry.',
-    image: 'px-7493873',
+    image: 'duco-painting',
     intro:
       'Duco (PU / lacquer) painting gives wood and board surfaces a mirror-smooth, high-gloss or matt finish in almost any colour – perfect for kitchens, wardrobes and doors.',
     offerings: [
@@ -327,6 +329,7 @@ export const services: Service[] = [
       { title: 'Durable surface', text: 'A hard-wearing coat that resists everyday knocks and stains.' },
     ],
     gallery: [
+      'duco-painting',
       'px-7493873',
       '1600489000022-c2086d79f9d4',
       '1556912172-45b7abe8b7e1',
@@ -349,7 +352,7 @@ export const services: Service[] = [
     icon: 'wood',
     title: 'Wood Polish & Finishes',
     short: 'Polish, stain and protective coatings that bring out the grain and protect your woodwork.',
-    image: 'px-5974350',
+    image: 'wood-polish',
     intro:
       'Real wood deserves a finish that shows off its grain and protects it for years. We polish, stain and seal doors, furniture, flooring and panelling.',
     offerings: [
@@ -366,7 +369,7 @@ export const services: Service[] = [
       { title: 'Restoration expertise', text: 'We bring tired, scratched or faded wood back to life.' },
     ],
     gallery: [
-      'px-5974350',
+      'wood-polish',
       'px-5974367',
       'px-5710754',
       'px-6004890',
@@ -506,7 +509,7 @@ export const services: Service[] = [
     icon: 'cleaning',
     title: 'Deep Cleaning',
     short: 'Thorough top-to-bottom cleaning for kitchens, bathrooms, floors and the whole home.',
-    image: '1581578731548-c64695cc6952',
+    image: 'deep-cleaning',
     intro:
       'Whether it is a fresh start after renovation or a seasonal refresh, our deep cleaning crews scrub, degrease and sanitise every corner so your home feels truly new.',
     offerings: [
@@ -524,7 +527,7 @@ export const services: Service[] = [
       { title: 'Renovation-ready', text: 'Paint splashes, cement dust and adhesive residue removed so you can move in straight away.' },
     ],
     gallery: [
-      '1581578731548-c64695cc6952',
+      'deep-cleaning',
       '1628177142898-93e36e4e3a50',
       '1558317374-067fb5f30001',
       '1527515637462-cff94eecc1ac',

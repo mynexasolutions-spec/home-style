@@ -1,56 +1,19 @@
-/**
- * DUMMY DATA – every name, title, quote, date and milestone below is a
- * placeholder. Replace with the real founders, team and company history.
- * Photos are stock portraits (files in public/images).
- */
-
 export type Founder = {
   name: string;
   role: string;
-  photo: string;
-  quote: string;
+  photo: string; // file in public/images/<photo>.jpg
+  quote?: string;
   bio: string;
-  facts: { value: string; label: string }[];
+  facts?: { value: string; label: string }[];
 };
 
 export const founders: Founder[] = [
   {
-    name: 'Arjun Mehta',
-    role: 'Founder & Managing Director',
-    photo: '1507003211169-0a1dd7228f2d',
-    quote: 'We treat every home as if it were our own – because to the family living in it, it is everything.',
-    bio: 'Arjun started Home Style as a two-person carpentry crew after years of watching homeowners juggle five different contractors for one renovation. He built the company around a simple promise: one team, one point of contact, no excuses.',
-    facts: [
-      { value: '15+', label: 'Years in the trade' },
-      { value: '500+', label: 'Homes completed' },
-      { value: '1', label: 'Point of contact' },
-    ],
+    name: 'Mohd Ushman',
+    role: 'Founder',
+    photo: 'mohd-ushman',
+    bio: 'Mohd Ushman founded Home Style in Gurugram to bring wooden work, electrical, tiling, plumbing, painting and finishing together under one team – so homeowners deal with a single point of contact instead of juggling five contractors.',
   },
-  {
-    name: 'Kavita Rao',
-    role: 'Co-Founder & Head of Design',
-    photo: '1494790108377-be9c29b29330',
-    quote: 'Good design is not about spending more. It is about knowing exactly where every rupee and every inch should go.',
-    bio: 'Kavita leads design and finishes – from colour palettes and textures to lighting and layouts. She joined to bring a designer’s eye to the workshop floor, and still reviews every project in person before handover.',
-    facts: [
-      { value: '12+', label: 'Years in interiors' },
-      { value: '200+', label: 'Layouts planned' },
-      { value: '100%', label: 'Projects reviewed' },
-    ],
-  },
-];
-
-export type TeamMember = { name: string; role: string; photo: string };
-
-export const team: TeamMember[] = [
-  { name: 'Rohan Singh', role: 'Head of Wooden Work', photo: 'px-5974350' },
-  { name: 'Imran Khan', role: 'Lead Electrician', photo: '1621905252507-b35492cc74b4' },
-  { name: 'Priya Nair', role: 'Interior Designer', photo: '1580489944761-15a19d654956' },
-  { name: 'Vikram Chauhan', role: 'Project Manager', photo: '1531427186611-ecfd6d936c79' },
-  { name: 'Sana Sheikh', role: 'Client Relations', photo: '1567532939604-b6b5b0db2604' },
-  { name: 'Deepak Yadav', role: 'Plumbing Supervisor', photo: '1522529599102-193c0d76b5b6' },
-  { name: 'Meera Joshi', role: 'Painting & Textures Lead', photo: '1438761681033-6461ffad8d80' },
-  { name: 'Karan Malhotra', role: 'Site Supervisor', photo: '1568602471122-7832951cc4c5' },
 ];
 
 export const valueCards = [
